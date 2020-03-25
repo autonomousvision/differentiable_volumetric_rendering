@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: pykdtree
+Version: 1.3.1
+Summary: Fast kd-tree implementation with OpenMP-enabled queries
+Home-page: UNKNOWN
+Author: Esben S. Nielsen
+Author-email: storpipfugl@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*

@@ -1,0 +1,6 @@
+
+inherit_from: configs/single_view_reconstruction/single_view_supervision/ours_combined.yaml
+generation:
+  generation_dir: generation_pretrained
+test:
+  model_file: https://s3.eu-central-1.amazonaws.com/avg-projects/differentiable_volumetric_rendering/models/single_view_reconstruction/single-view-supervision/ours_single-2b2bdbd4.pt

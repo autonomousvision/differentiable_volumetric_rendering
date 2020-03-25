@@ -1,0 +1,19 @@
+data:
+  dataset_name: NMR
+  path: data/NMR_Dataset
+  train_split: softras_train
+  val_split: softras_val
+  test_split: softras_test
+  img_folder_input: image
+  img_extension_input: png
+  depth_from_visual_hull: true
+  depth_range: [0., 5.]
+model:
+  decoder_kwargs:
+    hidden_size: 128
+training:
+  out_dir:  out/single_view_reconstruction/multi_view_supervision/ours_rgb
+  n_workers: 8
+  model_selection_metric: mask_intersection
+  model_selection_mode: maximize
+  n_eval_points: 4096

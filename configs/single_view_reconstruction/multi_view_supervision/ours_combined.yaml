@@ -1,0 +1,7 @@
+model:
+  lambda_depth: 10.
+training:
+  out_dir:  out/single_view_reconstruction/multi_view_supervision/ours_combined
+  n_workers: 8
+  n_training_points: 768
+  model_selection_metric: loss_depth_eval

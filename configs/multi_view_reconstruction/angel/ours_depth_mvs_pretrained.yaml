@@ -1,0 +1,5 @@
+inherit_from: configs/multi_view_reconstruction/angel/ours_depth_mvs.yaml
+generation:
+  generation_dir: generation_pretrained
+test:
+  model_file: https://s3.eu-central-1.amazonaws.com/avg-projects/differentiable_volumetric_rendering/models/multi_view_reconstruction/angel/ours_depth_mvs-53673e2f.pt

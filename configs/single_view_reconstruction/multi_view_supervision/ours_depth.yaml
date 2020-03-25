@@ -1,0 +1,12 @@
+model:
+  decoder_kwargs:
+    out_dim: 1
+  lambda_depth: 1.
+  lambda_rgb: 0.
+training:
+  out_dir:  out/single_view_reconstruction/multi_view_supervision/ours_depth
+  model_selection_metric: loss_depth_eval
+  n_workers: 8
+generation:
+  with_colors: false
+  mesh_extension: 'off'

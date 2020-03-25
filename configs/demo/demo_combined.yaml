@@ -1,0 +1,8 @@
+inherit_from: configs/single_view_reconstruction/multi_view_supervision/ours_combined_pretrained.yaml
+data:
+  dataset_name: images
+  path: media/demo/choy_renderings
+training:
+  out_dir:  out/demo/demo_combined
+generation:
+  generation_dir: generation

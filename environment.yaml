@@ -1,0 +1,20 @@
+name: dvr
+channels:
+  - anaconda
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - imageio=2.8.0
+  - numpy=1.18.1
+  - matplotlib=3.2.1
+  - python=3.8.2
+  - pytorch=1.4.0
+  - torchvision=0.5.0
+  - trimesh=3.6.10
+  - pip=20.0.2
+  - cython=0.29.15
+  - tensorboard=1.15.0
+  - pyyaml=5.3.1
+  - tqdm=4.43.0
+  - pandas=1.0.3

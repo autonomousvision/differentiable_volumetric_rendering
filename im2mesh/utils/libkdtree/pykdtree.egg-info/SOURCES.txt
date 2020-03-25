@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README
+setup.cfg
+setup.py
+pykdtree/__init__.py
+pykdtree/_kdtree_core.c
+pykdtree/kdtree.c
+pykdtree/test_tree.py
+pykdtree.egg-info/PKG-INFO
+pykdtree.egg-info/SOURCES.txt
+pykdtree.egg-info/dependency_links.txt
+pykdtree.egg-info/not-zip-safe
+pykdtree.egg-info/requires.txt
+pykdtree.egg-info/top_level.txt

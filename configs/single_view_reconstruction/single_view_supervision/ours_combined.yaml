@@ -1,0 +1,11 @@
+data:
+  img_folder_input: image
+  n_views: 1
+  n_views_input: 1
+  img_extension_input: png
+model:
+  lambda_depth: 10.
+training:
+  out_dir:  out/single_view_reconstruction/single_view_supervision/ours_combined
+  n_workers: 8
+  model_selection_metric: loss_depth_eval

@@ -1,0 +1,97 @@
+method: dvr
+data:
+  dataset_name: Shapes3D
+  path: data/ShapeNet
+  classes: null
+  input_type: image
+  dim: 3
+  n_views: 0
+  n_views_input: 0
+  pointcloud_chamfer_file: pointcloud.npz
+  depth_folder: depth
+  img_folder: image
+  img_folder_input: img_choy2016
+  visual_hull_depth_folder: visual_hull_depth
+  mask_folder: mask
+  img_extension: png
+  img_extension_input: jpg
+  depth_extension: exr
+  mask_extension: png
+  img_size: null
+  img_size_input: 224
+  img_with_camera: true
+  img_with_mask: true
+  train_split: train
+  val_split: val
+  test_split: test
+  cache_fields: false
+  split_model_for_images: false
+  depth_from_visual_hull: false
+  depth_range: [0, 2.4]
+  ignore_image_idx: []
+model:
+  decoder: simple
+  encoder: resnet18
+  decoder_kwargs: {}
+  encoder_kwargs: {}
+  depth_function_kwargs: {}
+  c_dim: 256
+  lambda_occupied: 1.
+  lambda_freespace: 1.
+  lambda_rgb: 1.
+  lambda_depth: 0.
+  lambda_image_gradients: 0.
+  lambda_sparse_depth: 0.
+  lambda_normal: 0.05
+  reduction_method: sum
+  patch_size: 1
+training:
+  out_dir:  out/00
+  batch_size: 64
+  batch_size_val: 32
+  print_every: 10
+  checkpoint_every: 200
+  visualize_every: 10000
+  validate_every: 2000
+  backup_every: 50000
+  learning_rate: 0.0001
+  scheduler_milestones: [750, 1000]
+  scheduler_gamma: 0.5
+  model_selection_metric: loss
+  model_selection_mode: minimize
+  n_training_points: 1024
+  n_eval_points: 4000
+  n_workers: 0
+  logfile: train.log
+  sample_continuous: False
+  overwrite_visualization: true
+  occupancy_random_normal: False
+  depth_loss_on_world_points: False
+  use_cube_intersection: true
+  always_freespace: True
+  multi_gpu: false
+test:
+  eval_file_name: eval_meshes
+  threshold: 0.5
+  model_file: model_best.pt
+generation:
+  batch_size: 1
+  vis_n_outputs: 30
+  generation_dir: generation
+  simplify_nfaces: null
+  padding: 0.0
+  resolution_0: 32
+  upsampling_steps: 3
+  refinement_step: 30
+  refine_max_faces: 10000
+  with_colors: true
+  mesh_extension: ply
+rendering:
+  render_dir: rendering
+  colors: rgb
+  resolution: [256, 256]
+  ray_sampling_accuracy: [1024, 1025]
+  extension: jpg
+  n_views: 1
+  n_start_view: 0
+  background: white
