@@ -133,6 +133,6 @@ If you like the DVR project, please check out other works on implicit representi
 
 ## Other Relevant Works
 Also check out other exciting works on inferring implicit representations without 3D supervision: 
-- [Liu et. al. - Soft Rasterizer: A Differentiable Renderer for Image-based 3D Reasoning (ICCV 2019)](https://arxiv.org/abs/1904.01786)
+- [Liu et. al. - Learning to Infer Implicit Surfaces without 3D Supervision (NeurIPS 2019)](https://arxiv.org/abs/1904.01786)
 - [Sitzmann et. al. - Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations (NeurIPS 2019)](https://arxiv.org/abs/1906.01618)
 - [Mildenhall et. al. - NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis (ArXiv 2020)](https://arxiv.org/abs/2003.08934)
