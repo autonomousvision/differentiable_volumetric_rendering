@@ -16,7 +16,7 @@ model:
   encoder: null
   patch_size: 2
   lambda_image_gradients: 1.
-  lambda_normals: 0.1
+  lambda_normal: 0.1
   lambda_depth: 1.
 training:
   out_dir:  out/multi_view_reconstruction/skull/ours_depth_mvs
