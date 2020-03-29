@@ -135,4 +135,5 @@ If you like the DVR project, please check out other works on implicit representi
 Also check out other exciting works on inferring implicit representations without 3D supervision: 
 - [Liu et. al. - Learning to Infer Implicit Surfaces without 3D Supervision (NeurIPS 2019)](https://arxiv.org/abs/1911.00767)
 - [Sitzmann et. al. - Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations (NeurIPS 2019)](https://arxiv.org/abs/1906.01618)
+- [Liu. et. al. - DIST: Rendering Deep Implicit Signed Distance Function with Differentiable Sphere Tracing (CVPR 2020)](http://b1ueber2y.me/projects/DIST-Renderer)
 - [Mildenhall et. al. - NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis (ArXiv 2020)](https://arxiv.org/abs/2003.08934)
