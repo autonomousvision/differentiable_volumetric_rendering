@@ -1,0 +1,10 @@
+data:
+  dataset_name: DTU
+  path: data/DTU
+  classes: ['scan65', 'scan106', 'scan118']
+  input_type: null
+  train_split: null
+  val_split: null
+  test_split: null
+training:
+  out_dir:  out/clean_dtu_predictions
