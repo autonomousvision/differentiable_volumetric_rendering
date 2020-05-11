@@ -1,5 +1,6 @@
 out
 .vscode
+/data
 .cache
 *.pyc
 *.pt
