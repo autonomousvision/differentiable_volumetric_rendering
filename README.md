@@ -1,4 +1,6 @@
 # Differentiable Volumetric Rendering
+#### [Paper](http://www.cvlibs.net/publications/Niemeyer2020CVPR.pdf) | [Spotlight Video](https://www.youtube.com/watch?v=lcub1KH-mmk) | [Blog Entry](https://autonomousvision.github.io/differentiable-volumetric-rendering/) | [Presentation](https://www.youtube.com/watch?v=U_jIN3qWVEw) | [Project Page](https://avg.is.tuebingen.mpg.de/publications/niemeyer2020cvpr)
+
 <div style="text-align: center">
 <img src="media/single-view-reconstruction/ours-combined/airplane1.gif" width="256"/>
 <img src="media/single-view-reconstruction/ours-combined/bench.gif" width="256"/>
