@@ -132,6 +132,8 @@ If you like the DVR project, please check out other works on implicit representi
 - [Mescheder et. al. - Occupancy Networks: Learning 3D Reconstruction in Function Space (CVPR 2019)](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks)
 - [Oechsle et. al. - Texture Fields: Learning Texture Representations in Function Space (ICCV 2019)](https://avg.is.tuebingen.mpg.de/publications/oechsle2019iccv)
 - [Niemeyer et. al. - Occupancy Flow: 4D Reconstruction by Learning Particle Dynamics (ICCV 2019)](https://avg.is.tuebingen.mpg.de/publications/niemeyer2019iccv)
+- [Peng et. al. - Convolutional Occupancy Networks (ArXiv 2020)](https://arxiv.org/abs/2003.04618)
+- [Oechsle et. al. - Learning Implicit Surface Light Fields (ArXiv 2020)](https://arxiv.org/abs/2003.12406)
 
 ## Other Relevant Works
 Also check out other exciting works on inferring implicit representations without 3D supervision: 
