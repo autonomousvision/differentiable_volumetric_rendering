@@ -6,6 +6,7 @@ from distutils.extension import Extension
 from Cython.Build import cythonize
 from torch.utils.cpp_extension import BuildExtension, CppExtension, CUDAExtension
 import numpy
+import platform
 
 
 # Get the numpy include directory.
@@ -44,7 +45,7 @@ triangle_hash_module = Extension(
     sources=[
         'im2mesh/utils/libmesh/triangle_hash.pyx'
     ],
-    libraries=['m'],  # Unix-like specific
+    libraries=['m'] if platform.system() == 'Linux' else [],  # Unix-like specific
     include_dirs=[numpy_include_dir]
 )
 
@@ -71,7 +72,7 @@ voxelize_module = Extension(
     sources=[
         'im2mesh/utils/libvoxelize/voxelize.pyx'
     ],
-    libraries=['m']  # Unix-like specific
+    libraries=['m'] if platform.system() == 'Linux' else []  # Unix-like specific
 )
 
 
