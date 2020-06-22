@@ -55,6 +55,7 @@ mise_module = Extension(
     sources=[
         'im2mesh/utils/libmise/mise.pyx'
     ],
+    include_dirs=[numpy_include_dir]
 )
 
 # simplify (efficient mesh simplification)
