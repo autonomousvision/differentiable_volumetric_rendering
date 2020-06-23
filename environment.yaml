@@ -1,8 +1,8 @@
 name: dvr
 channels:
+  - pytorch
   - anaconda
   - conda-forge
-  - pytorch
   - defaults
 dependencies:
   - imageio=2.8.0
