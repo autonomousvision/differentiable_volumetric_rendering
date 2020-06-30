@@ -23,3 +23,5 @@ Using the above matrices, we can easily transform a homogeneous point `p_world` 
 p_cam = camera_mat @ world_mat @ scale_mat @ p_world
 ```
 where `@` indicates matrix multiplication. Please have a look at our [projection function](https://github.com/autonomousvision/differentiable_volumetric_rendering/blob/43194fe8e02349a62bdbb867eefb98ba79bc90eb/im2mesh/common.py#L454) for more details. 
+
+For a more in-depth example, please have a look [this script](https://github.com/autonomousvision/differentiable_volumetric_rendering/blob/master/project_pixels_to_world_example.py).
