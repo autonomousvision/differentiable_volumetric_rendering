@@ -58,6 +58,8 @@ Moreover, the script creates a `generation/vis` folder where both inputs and out
 
 ## Dataset
 
+### Download Datasets
+
 To evaluate a pre-trained model or train a new model from scratch, you have to obtain the respective dataset.
 We use three different datasets in the DVR project: 
 <ol type="a">
@@ -73,6 +75,10 @@ bash scripts/download_data.sh
 and following the instructions. The sizes of the datasets are 114GB (a), 34GB (b), and 0.5GB (c).
 
 This script should download and unpack the data automatically into the `data` folder.
+
+### Data Convention
+
+Please have a look at the [FAQ](https://github.com/autonomousvision/differentiable_volumetric_rendering/blob/master/FAQ.md) for details regarding the type of camera matrices we use.
 
 ## Usage
 When you have installed all binary dependencies and obtained the preprocessed data, you are ready to run our pre-trained models and train new models from scratch.
