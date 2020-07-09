@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 from im2mesh.data.core import Field
 import imageio
-
+imageio.plugins.freeimage.download()
 
 class IndexField(Field):
     ''' Basic index field.'''

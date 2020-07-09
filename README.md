@@ -101,11 +101,30 @@ or for our multi-view reconstruction from RGB images and sparse depth maps for t
 ```
 python generate.py configs/multi_view_reconstruction/birds/ours_depth_mvs_pretrained.yaml
 ```
-
 Our script will automatically download the model checkpoints and run the generation.
 You can find the outputs in the `out/.../pretrained` folders.
 
 Please note that the config files  `*_pretrained.yaml` are only for generation, not for training new models: when these configs are used for training, the model will be trained from scratch, but during inference our code will still use the pre-trained model.
+
+### Testing on new single images
+For 3D model generation from single RGB images, 
+* put the images in `media/test_images_folder`
+* update the file `configs/demo/demo_combined.yaml` as below
+```
+inherit_from: configs/single_view_reconstruction/multi_view_supervision/ours_combined_pretrained.yaml
+data:
+  dataset_name: images
+  path: media/test_images_folder
+training:
+  out_dir:  media/output_3D_models
+generation:
+  generation_dir: generation
+```
+* run `generate.py` code and find the outputs in `media/output_3D_models`
+```
+python generate.py configs/demo/demo_combined.yaml 
+```
+
 
 ### Evaluation
 For evaluation of the models, we provide the script `eval_meshes.py`. You can run it using
