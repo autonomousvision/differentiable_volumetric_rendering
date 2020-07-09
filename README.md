@@ -122,7 +122,7 @@ Similar to before, to start the generation process, run
 ```
 python generate.py configs/demo/demo_combined.yaml 
 ```
-*Note:* You can only except our model to provide reasonable results on data which is similar to what it was trained on (white background, single object, etc.). 
+*Note:* You can only expect our model to provide reasonable results on data which is similar to what it was trained on (white background, single object, etc.). 
 
 
 ### Evaluation
