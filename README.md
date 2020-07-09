@@ -106,21 +106,19 @@ You can find the outputs in the `out/.../pretrained` folders.
 
 Please note that the config files  `*_pretrained.yaml` are only for generation, not for training new models: when these configs are used for training, the model will be trained from scratch, but during inference our code will still use the pre-trained model.
 
-### Testing on new single images
-For 3D model generation from single RGB images, 
-* put the images in `media/test_images_folder`
-* update the file `configs/demo/demo_combined.yaml` as below
+### Generation From Your Own Single Images
+
+Similar to our demo, you can easily generate 3D meshes from your own single images. To this end, create a folder which contains your own images (e.g. `media/my_images`). Next, you can reuse the config file `configs/demo/demo_combined.yaml` and just adjust the [data - path](https://github.com/autonomousvision/differentiable_volumetric_rendering/blob/4ba785a2bfee0cc28324fbbd96c6e5e83f6899fc/configs/demo/demo_combined.yaml#L4) and [training - out_dir](https://github.com/autonomousvision/differentiable_volumetric_rendering/blob/4ba785a2bfee0cc28324fbbd96c6e5e83f6899fc/configs/demo/demo_combined.yaml#L6) arguments to your needs. For example, you can set the config file to
 ```
 inherit_from: configs/single_view_reconstruction/multi_view_supervision/ours_combined_pretrained.yaml
 data:
   dataset_name: images
-  path: media/test_images_folder
+  path: media/my_images
 training:
-  out_dir:  media/output_3D_models
-generation:
-  generation_dir: generation
+  out_dir:  out/my_3d_models
 ```
-* run `generate.py` code and find the outputs in `media/output_3D_models`
+to generate 3D models for the images in `media/my_images`. The models will be saved to `out/my_3d_models`.
+Similar to before, to start the generation process, run
 ```
 python generate.py configs/demo/demo_combined.yaml 
 ```
