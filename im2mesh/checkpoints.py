@@ -52,18 +52,18 @@ class CheckpointIO(object):
             filename_backup = os.path.join(backup_dir, '%s.pt' % ts)
             shutil.copy(filename, filename_backup)
 
-    def load(self, filename):
+    def load(self, filename, device):
         '''Loads a module dictionary from local file or url.
 
         Args:
             filename (str): name of saved module dictionary
         '''
         if is_url(filename):
-            return self.load_url(filename)
+            return self.load_url(filename, device)
         else:
-            return self.load_file(filename)
+            return self.load_file(filename, device)
 
-    def load_file(self, filename):
+    def load_file(self, filename, device):
         '''Loads a module dictionary from file.
 
         Args:
@@ -76,13 +76,13 @@ class CheckpointIO(object):
         if os.path.exists(filename):
             print(filename)
             print('=> Loading checkpoint from local file...')
-            state_dict = torch.load(filename)
+            state_dict = torch.load(filename, map_location=torch.device(device))
             scalars = self.parse_state_dict(state_dict)
             return scalars
         else:
             raise FileExistsError
 
-    def load_url(self, url):
+    def load_url(self, url, device):
         '''Load a module dictionary from url.
 
         Args:
@@ -90,7 +90,7 @@ class CheckpointIO(object):
         '''
         print(url)
         print('=> Loading checkpoint from url...')
-        state_dict = model_zoo.load_url(url, progress=True)
+        state_dict = model_zoo.load_url(url, progress=True, map_location=torch.device(device))
         scalars = self.parse_state_dict(state_dict)
         return scalars
 
