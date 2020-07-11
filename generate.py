@@ -60,8 +60,8 @@ if __name__ == '__main__':
     model = config.get_model(cfg, device=device, len_dataset=len(dataset))
 
     checkpoint_io = CheckpointIO(out_dir, model=model)
-    checkpoint_io.load(cfg['test']['model_file'])
-
+    checkpoint_io.load(cfg['test']['model_file'], device=device)
+    
     # Generator
     generator = config.get_generator(model, cfg, device=device)
 
