@@ -78,7 +78,7 @@ if __name__ == '__main__':
                                 generator=generator)
     checkpoint_io = CheckpointIO(out_dir, model=model, optimizer=optimizer)
     try:
-        load_dict = checkpoint_io.load('model.pt')
+        load_dict = checkpoint_io.load('model.pt', device=device)
     except FileExistsError:
         load_dict = dict()
 
