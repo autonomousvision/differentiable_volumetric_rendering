@@ -42,9 +42,9 @@ python setup.py build_ext --inplace
 
 ## Demo
 <div style="text-align: center">
-<img src="media/demo/choy_renderings/f32cfab76f75cbebc6ced373b157c8ba_input.jpg" width="250"/> 
-<img src="media/single-view-reconstruction/ours-rgb/car2.gif" width="300"/>
-<img src="media/single-view-reconstruction/ours-depth/car2.gif" width="300"/>
+<img src="media/demo/choy_renderings/f32cfab76f75cbebc6ced373b157c8ba_input.jpg" width="220"/> 
+<img src="media/single-view-reconstruction/ours-rgb/car2.gif" width="260"/>
+<img src="media/single-view-reconstruction/ours-depth/car2.gif" width="260"/>
 
 You can now test our code on the provided input images in the `demo` folder.
 To this end, start the generation process for one of the config files in the `configs/demo` folder.
